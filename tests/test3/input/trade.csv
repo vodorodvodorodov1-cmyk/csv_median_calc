@@ -1,0 +1,2 @@
+receive_ts;exchange_ts;price;quantity;side
+9999;9000;123.45000000;1.0;bid

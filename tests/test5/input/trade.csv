@@ -1,0 +1,5 @@
+receive_ts;exchange_ts;price;quantity;side
+1;0;100.00000000;1.0;bid
+2;1;90.00000000;1.0;ask
+3;2;80.00000000;1.0;bid
+4;3;70.00000000;1.0;ask

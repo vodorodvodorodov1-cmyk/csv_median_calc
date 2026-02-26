@@ -1,0 +1,16 @@
+[main]
+input          = './examples/input'
+output         = './examples/output'
+filename_mask  = ['level', 'trade']
+
+[metrics]
+# Доступные метрики: median, mean, std_dev, p50, p90, p95, p99
+# mean/std_dev/pXX рассчитываются через Boost.Accumulators (Extended P-Square)
+enabled = ['median']
+
+[performance]
+# 7.1: параллельное чтение файлов (std::async, по одному потоку на файл)
+parallel  = false
+# 7.3: потоковый k-way merge без загрузки всех записей в память
+#       требует, чтобы каждый CSV-файл был индивидуально отсортирован по receive_ts
+streaming = false

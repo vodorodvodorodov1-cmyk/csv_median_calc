@@ -1,0 +1,4 @@
+receive_ts;exchange_ts;price;quantity;side;rebuild
+100;90;10.00000000;1.0;bid;0
+300;290;20.00000000;1.0;ask;0
+500;490;30.00000000;1.0;bid;1
